@@ -148,7 +148,7 @@ def main():
 
     input_df = user_input_features()
     DF = pd.concat([input_df, heart], axis=0)
-    DF = DF.drop(columns=["Heart Disease"])
+
 
     cat_cols = ["Age", "Sex", "Chest pain type", "BP", "Cholesterol",
                 "FBS over 120", "EKG results", "Max HR", "Exercise Angina", "ST Depression",
