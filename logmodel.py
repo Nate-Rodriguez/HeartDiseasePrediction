@@ -73,7 +73,7 @@ def main():
         fbs = st.sidebar.number_input("Is your fasting blood pressure over 120? (1 = yes, 0 = no) ",
                                        0, 1)
         ekg = st.sidebar.number_input("Resting Electrocardiographic Results (0 = normal, 1 = having ST-T wave abnormality, 2 = showing probable or definite left vantricular hypertrophy): ",
-                                       0,1,2)
+                                       min_value = 0, max_value = 2)
         maxhr = st.sidebar.number_input("What is your max heart rate?", min_value = 0, max_value = 250)
         exrang = st.sidebar.number_input("Do you have exercise enduced angina (1 = yes, 0 = no)?", 0,1)
         oldpeak = st.sidebar.number_input("ST depression induced by exercise relative to rest", min_value = 0, max_value = 7)
