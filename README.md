@@ -1,5 +1,4 @@
 # MyPortfolio
-Hello! Come check out what Nate Rodriguez is up to.
 
 Project Title: Heart Disease Prediction
 Dataset: https://archive.ics.uci.edu/ml/datasets/Heart+Disease
