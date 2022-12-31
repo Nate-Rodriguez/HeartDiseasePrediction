@@ -77,9 +77,9 @@ def main():
         maxhr = st.sidebar.number_input("What is your max heart rate?", min_value = 0, max_value = 250)
         exrang = st.sidebar.number_input("Do you have exercise enduced angina (1 = yes, 0 = no)?", 0,1)
         oldpeak = st.sidebar.number_input("ST depression induced by exercise relative to rest", min_value = 0, max_value = 7)
-        slopest = st.sidebar.number_input("What isthe slope of your peak exercise ST segment? (1 = upsloping, 2 = flat, 3 = downsloping)", 1,2,3)
+        slopest = st.sidebar.number_input("What is the slope of your peak exercise ST segment? (1 = upsloping, 2 = flat, 3 = downsloping)", min_value = 1, max_value = 3)
         thal = st.sidebar.number_input("Thallium (3 = normal, 6 = fixed defect, 7 = reversable defect)", 3,6,7)
-        numfluro = st.sidebar.number_input("Number of Vessels Fluro: ", 0,1,2,3)
+        numfluro = st.sidebar.number_input("Number of Vessels Fluro: ", min_value = 0, max_value = 3)
 
         features = pd.DataFrame({
             "Age": [age],
