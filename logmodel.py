@@ -15,7 +15,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler #Z-score variables
 from sklearn.model_selection import train_test_split # simple TT split cv
 from sklearn.compose import make_column_transformer
-
+from streamlit import columns
 from sklearn.preprocessing import StandardScaler #Z-score variables
 
 
