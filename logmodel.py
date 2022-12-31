@@ -144,7 +144,7 @@ def main():
     heart = load_dataset()
 
     st.sidebar.title("Feature Selection")
-    st.sidebar.image("heartsidebar.png", width=100)
+    st.sidebar.image("https://cdn.pixabay.com/photo/2012/04/01/18/57/heart-24037_1280.png", width=100)
 
     input_df = user_input_features()
     DF = pd.concat([input_df, heart], axis=0)
