@@ -145,9 +145,11 @@ def main():
 
     st.sidebar.title("Feature Selection")
     st.sidebar.image("https://cdn.pixabay.com/photo/2012/04/01/18/57/heart-24037_1280.png", width=100)
+    submit = st.button["Predict"]
 
     input_df = user_input_features()
     DF = pd.concat([input_df, heart], axis=0)
+
 
 
     cat_cols = ["Age", "Sex", "Chest pain type", "BP", "Cholesterol",
