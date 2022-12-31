@@ -110,7 +110,7 @@ def main():
     st.subheader("Are you wondering about the condition of your heart? "
                  "This app will help you to diagnose it!")
 
-    col1, col2 = st.columns([1, 3])
+    col1, col2 = st.columns(2)
 
     with col1:
         st.image("doctor.png",
