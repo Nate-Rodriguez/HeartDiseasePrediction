@@ -65,7 +65,7 @@ def main():
         age = st.sidebar.number_input("Age", min_value = 0, max_value = 100)
         sex = st.sidebar.number_input("Sex (1 = Male, 0 = Female)", 0, 1)
         chest_pain_type = st.sidebar.number_input("Respond with you Chest Pain Type (1 = typical angina, 2 =  atypical angina, 3 = non-anginal pain, 4 = asympotomatic)",
-                                       1, 2, 3, 4)
+                                       min_value= 1, max_value = 4)
         blood_pressure = st.sidebar.number_input("Enter Your Blood Pressure: ",
                                        min_value = 0, max_value = 300)
         chol = st.sidebar.number_input("Enter Your Cholesterol (mg/dl): ",
