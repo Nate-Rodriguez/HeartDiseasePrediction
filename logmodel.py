@@ -109,37 +109,37 @@ def main():
     st.subheader("Are you wondering about the condition of your heart? "
                  "This app will help you to diagnose it!")
 
-    col1, col2 = st.columns(2)
+    # col1, col2 = st.columns(2)
 
-    with col1:
-        st.image("doctor.png",
-                 caption="I'll help you diagnose your heart health! - Dr. Logistic Regression",
-                 width=150)
-        submit = st.button("Predict")
-    with col2:
-        st.markdown("""
-        Did you know that machine learning models can help you
-        predict heart disease pretty accurately? In this app, you can
-        estimate your chance of heart disease in seconds!
+    # with col1:
+    #     st.image("doctor.png",
+    #              caption="I'll help you diagnose your heart health! - Dr. Logistic Regression",
+    #              width=150)
+    #     submit = st.button("Predict")
+    # with col2:
+    #     st.markdown("""
+    #     Did you know that machine learning models can help you
+    #     predict heart disease pretty accurately? In this app, you can
+    #     estimate your chance of heart disease in seconds!
         
-        Here, a logistic regression model using an undersampling technique
-        was constructed using survey data of over 300k US residents from the year 2020.
-        This application is based on it because it has proven to be better than the random forest
-        (it achieves an accuracy of about 83%, which is quite good).
+    #     Here, a logistic regression model using an undersampling technique
+    #     was constructed using survey data of over 300k US residents from the year 2020.
+    #     This application is based on it because it has proven to be better than the random forest
+    #     (it achieves an accuracy of about 83%, which is quite good).
         
-        To predict your heart disease status, simply follow the steps bellow:
-        1. Enter the parameters that best describe you;
-        2. Press the "Predict" button and wait for the result.
+    #     To predict your heart disease status, simply follow the steps bellow:
+    #     1. Enter the parameters that best describe you;
+    #     2. Press the "Predict" button and wait for the result.
             
-        **Keep in mind that this results is not equivalent to a medical diagnosis!
-        This model would never be adopted by health care facilities because of its less
-        than perfect accuracy, so if you have any problems, consult a human doctor.**
+    #     **Keep in mind that this results is not equivalent to a medical diagnosis!
+    #     This model would never be adopted by health care facilities because of its less
+    #     than perfect accuracy, so if you have any problems, consult a human doctor.**
         
-        **Author: Nate Rodriguez ([GitHub](https://github.com/kamilpytlak/heart-condition-checker))**
+    #     **Author: Nate Rodriguez ([GitHub](https://github.com/kamilpytlak/heart-condition-checker))**
         
-        You can see the steps of building the model, evaluating it, and cleaning the data itself
-        on my GitHub repo [here](https://github.com/kamilpytlak/data-analyses/tree/main/heart-disease-prediction). 
-        """)
+    #     You can see the steps of building the model, evaluating it, and cleaning the data itself
+    #     on my GitHub repo [here](https://github.com/kamilpytlak/data-analyses/tree/main/heart-disease-prediction). 
+    #     """)
 
     heart = load_dataset()
 
